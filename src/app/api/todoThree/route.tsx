@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export const revalidate = 3600;
+export const fetchCache = 'force-cache';
 
 export async function GET(request: NextRequest) {
   const queryParams = request.nextUrl.searchParams;
